@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:myapp/src/pages/home/home_page.dart';
-import 'package:myapp/src/pages/info/info_page.dart';
+import 'package:myapp/src/pages/configs/app_route.dart';
 
 class App extends StatelessWidget {
   const App({super.key});
@@ -8,11 +8,9 @@ class App extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      routes: {
-        'home': (context) => HomePage(),
-        'info': (context) => InfoPage(),
-      },
+      routes: AppRoute().getAll,
       debugShowCheckedModeBanner: false,
+      theme: ThemeData(useMaterial3: true),
       home: HomePage(),
     );
   }

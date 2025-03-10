@@ -27,9 +27,7 @@ class InfoPage extends StatelessWidget {
             children: [
               const CircleAvatar(
                 radius: 65,
-                backgroundImage: NetworkImage(
-                  'https://scontent-bkk1-2.xx.fbcdn.net/v/t1.15752-9/476496923_1300732134477703_6830153537542658018_n.png?_nc_cat=103&ccb=1-7&_nc_sid=9f807c&_nc_ohc=cJ6OAZQEYhcQ7kNvgHl_epV&_nc_oc=Adge1rCfvExg6BP1KRZykETdr_SVmC9jARlY9lJO5nooO5U41D2_ZwvbFFRfMngB5PE&_nc_zt=23&_nc_ht=scontent-bkk1-2.xx&oh=03_Q7cD1gE4O7K8IaEyV8gjR24s-hEpDsdMw-Dy-3L83l32jdMKqw&oe=67E79C9C',
-                ),
+                backgroundImage: AssetImage('assets/images/profile_not_bg.png'),
               ),
               const SizedBox(height: 14),
               const Text(
